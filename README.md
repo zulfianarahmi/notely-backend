@@ -1,5 +1,6 @@
 # **Notely - Backend**  
 This is the backend for Notely, a simple note-taking platform built with Node.js, Express, and Prisma.  
+This project is developed by **Group 2** from **Bootcamp Kilat GDGoC UG 2025**.  
 
 📌 **Frontend Repository**: [Fe-Notes](https://github.com/vardhaaa/Fe-Notes)  
 
@@ -45,4 +46,16 @@ cd notely-backend
 ## 2. Install Dependencies  
 ```bash
 npm install
+```
+
+## 3. Set Up Environment Variables
+Create a .env file in the root directory and add the necessary variables as per the documentation.
+
+## 4. Run Database Migrations
+```bash
+npx prisma migrate dev
+```
+## 5. Start the Server
+```bash
+npm run dev
 ```
