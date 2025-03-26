@@ -22,8 +22,8 @@ This project is developed by **Group 2** from **Bootcamp Kilat GDGoC UG 2025**.
 ### Authentication  
 | Method | Endpoint            | Description                  |
 |--------|--------------------|------------------------------|
-| POST   | `/api/auth/register` | Register a new user         |
-| POST   | `/api/auth/login`    | Log in a user and get a token |
+| POST   | `/api/auth/signin` | Register a new user         |
+| POST   | `/api/auth/signup`    | Log in a user and get a token |
 
 ### Notes  
 | Method  | Endpoint         | Description           |
