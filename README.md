@@ -27,17 +27,17 @@ Sebelum memulai, pastikan Anda telah menginstal:
 2. Instal dependensi:
 
 ```bash
-npm install
-Konfigurasi lingkungan:
+npm install```
 
-3. Buat file .env di root proyek dan tambahkan variabel berikut:
+3. Konfigurasi lingkungan:
+Buat file .env di root proyek dan tambahkan variabel berikut:
 
 ```bash
 DATABASE_URL="postgresql://username:password@localhost:5432/nama_database"
-SECRET_KEY="your_jwt_secret_key"
+SECRET_KEY="your_jwt_secret_key"```
 
 4. Menjalankan Server
 Untuk menjalankan server dalam mode pengembangan:
 
 ```bash
-npm run dev
+npm run dev```
