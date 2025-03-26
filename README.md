@@ -17,6 +17,24 @@ This project is developed by **Group 2** from **Bootcamp Kilat GDGoC UG 2025**.
 ✅ **Data Validation** - Uses Zod for input validation.  
 ✅ **API Testing** - Endpoints are tested using Postman.  
 
+## API Endpoints  
+
+### Authentication  
+| Method | Endpoint            | Description                  |
+|--------|--------------------|------------------------------|
+| POST   | `/api/auth/register` | Register a new user         |
+| POST   | `/api/auth/login`    | Log in a user and get a token |
+
+### Notes  
+| Method  | Endpoint         | Description           |
+|---------|-----------------|-----------------------|
+| GET     | `/api/notes`     | Get all notes        |
+| GET     | `/api/notes/:id` | Get a note by ID     |
+| POST    | `/api/notes`     | Create a new note    |
+| PUT     | `/api/notes/:id` | Update a note by ID  |
+| DELETE  | `/api/notes/:id` | Delete a note by ID  |
+
+
 ## **Project Structure**  
 ```plaintext
 📂 prisma/
