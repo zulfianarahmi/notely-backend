@@ -1,23 +1,43 @@
-# Be-Notely
+# Notely Backend
 
-Backend untuk aplikasi Notely, dibuat dengan **Node.js**, **Express**, **TypeScript**, dan **Prisma** (PostgreSQL).
+Backend untuk aplikasi Notely, dibangun menggunakan Node.js, Express, TypeScript, dan Prisma dengan PostgreSQL sebagai basis data.
 
-## Apa yang Sudah Dikerjakan?
-- **Setup Project**: Install dependencies, setup TypeScript, dan Prisma.
-- **Database**: Bikin model `Note` dan jalankan migration.
-- **API CRUD**: Endpoint untuk buat, baca, update, dan hapus catatan.
-- **Validasi**: Pake Zod buat validasi data.
-- **Testing**: Test API pake Postman.
+## Fitur
 
-## Cara Menjalankan
-1. Clone repo:
+- **Manajemen Catatan**: Membuat, membaca, memperbarui, dan menghapus catatan.
+- **Autentikasi Pengguna**: Registrasi dan login pengguna dengan hashing kata sandi dan token JWT.
+- **Validasi Data**: Menggunakan Zod untuk validasi input.
+- **Pengujian API**: Endpoint telah diuji menggunakan Postman.
+
+## Prasyarat
+
+Sebelum memulai, pastikan Anda telah menginstal:
+
+- [Node.js](https://nodejs.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Prisma CLI](https://www.prisma.io/docs/concepts/components/prisma-cli/installation)
+
+## Instalasi
+
+1. **Kloning repositori**:
+
    ```bash
-   git clone https://github.com/zulfianarahmi/be-notely.git
-   cd be-notely
+   git clone https://github.com/zulfianarahmi/notely-backend.git
+   cd notely-backend
+2. Instal dependensi:
 
-## Endpoint API
-- POST /api/notes: Buat catatan baru.
-- GET /api/notes: Ambil semua catatan.
-- GET /api/notes/:id: Ambil satu catatan berdasarkan ID. (BLM)
-- PUT /api/notes/:id: Update catatan berdasarkan ID.
-- DELETE /api/notes/:id: Hapus catatan berdasarkan ID.
+```bash
+npm install
+Konfigurasi lingkungan:
+
+3. Buat file .env di root proyek dan tambahkan variabel berikut:
+
+```bash
+DATABASE_URL="postgresql://username:password@localhost:5432/nama_database"
+SECRET_KEY="your_jwt_secret_key"
+
+4. Menjalankan Server
+Untuk menjalankan server dalam mode pengembangan:
+
+```bash
+npm run dev
